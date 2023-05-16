@@ -1,7 +1,5 @@
-//Strivers Sheet
-//GRAPHS [CONCEPTS AND PROBLEMS]
-//Step 15.1 : Learning
-//Graph Types
+#include <bits/stdc++.h>
+using namespace std;
 
 class Solution {
   public:
@@ -18,3 +16,16 @@ class Solution {
         
     }
 };
+
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+        cin >> n;
+        Solution ob;
+        cout << ob.count(n) << "\n";
+    }
+
+    return 0;
+}
