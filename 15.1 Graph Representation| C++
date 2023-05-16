@@ -1,0 +1,38 @@
+//Striver sheet
+//Graph Representation
+
+
+class Solution {
+  public:
+    // Function to return the adjacency list for each vertex.
+    vector<vector<int>> printGraph(int n, vector<int> adj[]) {
+      vector<vector<int>> v;
+      
+      
+      //traversing through the graph 
+      //traverse through each node
+      for(int i=0; i<n; i++){
+          
+          //form a dummy vector to contain the adjacent nodes of each nodes
+          vector<int> dummy;
+          
+          //push the node itself in dummy 
+          dummy.push_back(i);
+          
+          //push all the adjacent elements of the node
+          for(auto it: adj[i]){
+              dummy.push_back(it);
+          }
+          
+          //sort the dummy array from second index, excluding the self node
+          sort(dummy.begin()+1, dummy.end());
+          
+          //push the dummy node to the adjacency list
+          v.push_back(dummy);
+      }
+      
+      //return adjacenecy list
+      return v;
+      
+    }
+};
