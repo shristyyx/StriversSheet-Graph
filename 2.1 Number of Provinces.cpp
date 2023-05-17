@@ -1,6 +1,6 @@
 //Strivers Sheet
 //GRAPHS [CONCEPTS AND PROBLEMS]
-//Step 15.1 : Learning
+//Step 15.2 :  Problems on BFS/DFS
 //Number of Provinces
 //User function Template for C++
 
